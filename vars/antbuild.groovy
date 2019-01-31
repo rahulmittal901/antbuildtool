@@ -2,7 +2,7 @@
 
 def call(arg) {
 
-  withAnt(installation: $arg, jdk: 'jdk') {
+  withAnt(installation: 'ant', jdk: 'jdk') {
             bat "ant compile"
 
        }
