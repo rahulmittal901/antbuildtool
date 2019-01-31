@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
 
-def call() {
+def call(arg) {
 
-  withAnt(installation: 'ant', jdk: 'jdk') {
+  withAnt(installation: '$arg', jdk: 'jdk') {
             bat "ant compile"
 
        }
